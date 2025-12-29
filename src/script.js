@@ -124,10 +124,6 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
-  
-    
-
-
 
 //Start UI interface
 
@@ -185,4 +181,6 @@ playAgainBtn.addEventListener('click', () => {
 gameOverBtn.addEventListener('click', () => {
     buttonDiv.removeChild(gameOverBtn);
     buttonDiv.removeChild(playAgainBtn);
+    resultDiv.innerText = "Game Over!";
+    scoreDiv.innerHTML = "";
 })
